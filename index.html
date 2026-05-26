@@ -3,44 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartwisepro - Coming Soon</title>
+    <title>Kartwise Pro - Coming Soon</title>
+    <!-- Professional font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; text-align: center; margin: 0; padding: 0; color: #333; }
-        header { padding: 50px; background: #f4f4f4; }
-        .logo { width: 100px; border-radius: 20%; }
-        .banner { width: 100%; max-width: 800px; margin-top: 20px; border-radius: 10px; }
-        content { display: block; padding: 50px; }
-        footer { padding: 20px; font-size: 0.8em; border-top: 1px solid #ddd; }
-        a { color: #007bff; text-decoration: none; margin: 0 10px; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        
+        header { 
+            padding: 60px 20px; 
+            background: #f4f4f4; 
+            text-align: center;
+        }
+
+        .logo { width: 120px; border-radius: 20%; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        
+        .banner { 
+            width: 100%; 
+            max-width: 900px; 
+            margin-top: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        h1 { font-size: 3rem; margin: 10px 0; color: #1a1a1a; }
+        .tagline { font-size: 1.2rem; color: #666; font-style: italic; }
+
+        /* The Main Content Wrapper */
+        .content-container { 
+            max-width: 750px; /* Limits width for readability */
+            margin: 60px auto; 
+            padding: 0 30px;
+            text-align: left; /* Left aligned text is much easier to read for long blocks */
+        }
+
+        h2 { font-size: 1.8rem; color: #1a1a1a; margin-top: 40px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        
+        p { margin-bottom: 25px; font-size: 1.1rem; }
+
+        .feature-list { margin: 25px 0; padding-left: 20px; list-style-type: square; }
+        .feature-list li { margin-bottom: 15px; font-size: 1.1rem; }
+
+        .trial-box { 
+            background-color: #e7f3ff; 
+            padding: 20px; 
+            border-left: 5px solid #007bff; 
+            border-radius: 4px; 
+            font-weight: 600;
+        }
+
+        .contact-info { 
+            text-align: center; 
+            margin-top: 60px; 
+            padding: 40px; 
+            background: #fafafa; 
+            border-radius: 10px;
+        }
+
+        footer { 
+            padding: 40px 20px; 
+            text-align: center; 
+            font-size: 0.9em; 
+            border-top: 1px solid #eee; 
+            color: #888;
+        }
+        
+        a { color: #007bff; text-decoration: none; font-weight: 600; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="banner.png" alt="App Preview" class="banner">
+        <img src="logo.png" alt="Kartwise Pro Logo" class="logo">
         <h1>Kartwise Pro</h1>
-        <p>Data is knowledge. Knowledge is power. Power wins races.</p>    
+        <p class="tagline">Data is knowledge. Knowledge is power. Power wins races.</p>
+        <img src="banner.png" alt="App Preview" class="banner">
     </header>
 
-    <content>
-        <img src="logo.png" alt="Kartwisepro Logo" class="logo">
+    <div class="content-container">
         <h2>Coming Soon to Google Play</h2>
-        <p>We are currently working hard to bring Kartwise Pro to your devices.</p>
-        <p>In the heat of a race day, every second counts—both on the track and in the pits. Kartwise Pro replaces messy, incomplete paper logs or laborious spreadsheets with a streamlined digital interface built for the speed of competitive karting. No more second-guessing your last tire pressure change or hunting through notebooks for last season's winning jetting. With a few taps, you can capture every critical detail, from engine RPMs to chassis tweaks, ensuring your data is as fast and precise as your driving.
+        
+        <p>We are currently working hard to bring <strong>Kartwise Pro</strong> to your devices.</p>
 
-•Turn Your Data Into a Podium Finish:
+        <p>In the heat of a race day, every second counts—both on the track and in the pits. Kartwise Pro replaces messy, incomplete paper logs or laborious spreadsheets with a streamlined digital interface built for the speed of competitive karting.</p>
+        
+        <p>No more second-guessing your last tire pressure change or hunting through notebooks for last season's winning jetting. With a few taps, you can capture every critical detail, from engine RPMs to chassis tweaks, ensuring your data is as fast and precise as your driving.</p>
 
-Knowledge is only power if you can use it. Kartwise Pro doesn't just store your notes; it analyzes them to reveal the hidden trends that win races. Instantly visualize how track temperature affects your hot pressures or track your engine hours and tire cycles with surgical precision. Whether you’re dialing in for the next session or recalling a proven setup for your favourite track, you'll have the data-driven confidence to make the right call every time. The more you log, the smarter you get—and the harder you are to beat.
+        <h2>Turn Your Data Into a Podium Finish</h2>
 
-30 Day Full Access Free Trial! 
-Build your database for free for 30 days—your data stays with you, even if you don't subscribe.</p>
-        <p>Contact us: <strong>kartwisepro@gmail.com</strong></p>
-    </content>
+        <p>Knowledge is only power if you can use it. Kartwise Pro doesn't just store your notes; it analyzes them to reveal the hidden trends that win races.</p>
+
+        <ul class="feature-list">
+            <li><strong>Visualize Trends:</strong> Instantly see how track temperature affects your hot pressures.</li>
+            <li><strong>Surgical Precision:</strong> Track your engine hours and tire cycles automatically.</li>
+            <li><strong>Proven Setups:</strong> Recall winning setups for your favourite tracks with one tap.</li>
+        </ul>
+
+        <p>The more you log, the smarter you get—and the harder you are to beat. Whether you’re dialing in for the next session or planning for next season, you'll have the data-driven confidence to make the right call every time.</p>
+
+        <div class="trial-box">
+            🏎️ 30 Day Full Access Free Trial!<br>
+            <span style="font-weight: 400; font-size: 0.9em;">Build your database for free for 30 days—your data stays with you, even if you don't subscribe.</span>
+        </div>
+
+        <div class="contact-info">
+            <p>Questions? Reach out to the team:</p>
+            <a href="mailto:kartwisepro@gmail.com" style="font-size: 1.2rem;">kartwisepro@gmail.com</a>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Kartwisepro Ltd</p>
-        <a href="privacy.html">Privacy Policy</a> | 
-        <a href="terms.html">Terms and Conditions</a>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms and Conditions</a>
+        </p>
     </footer>
 
 </body>
