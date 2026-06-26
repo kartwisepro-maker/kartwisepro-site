@@ -13,10 +13,29 @@
             --light-bg: #f8f9fa;
         }
 
-        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; background-color: #fff; }
-        header { padding: 40px 20px; background: linear-gradient(180deg, #f4f4f4 0%, #ffffff 100%); text-align: center; }
-        .banner { width: 100%; max-width: 900px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
-        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #f4f4f4 0%, #ffffff 100%);
+            text-align: center;
+        }
+
+        .banner {
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
         /* CHANGE 2: Added styles for the Download Button */
         .download-btn {
             display: inline-block;
@@ -31,39 +50,144 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             margin-top: 20px;
         }
-        .download-btn:hover { background-color: #333; transform: translateY(-2px); color: #fff; }
 
-        .screenshot-wrapper { width: 100%; overflow: hidden; padding: 40px 0; background: var(--light-bg); }
-        .screenshot-container { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 20px; padding: 0 20px 20px 20px; scrollbar-width: none; }
-        .screenshot-container::-webkit-scrollbar { display: none; }
-        .screenshot-item { flex: 0 0 280px; scroll-snap-align: center; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); transition: transform 0.3s ease; }
-        .screenshot-item img { width: 100%; border-radius: 15px; display: block; }
-        h1 { font-size: 2.5rem; margin: 10px 0; color: var(--dark-bg); }
-        .tagline { font-size: 1.2rem; color: #666; font-weight: 400; max-width: 1000px; margin: 0 auto; }
-        .content-container { max-width: 800px; margin: 40px auto; padding: 0 30px; }
-        h2 { font-size: 1.8rem; color: var(--dark-bg); margin-top: 40px; border-left: 4px solid var(--primary-blue); padding-left: 15px; }
-        p { margin-bottom: 20px; font-size: 1.1rem; color: #444; }
-        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin: 30px 0; }
-        
-.feature-card {
-    background: # box-shadow: 0 8px 20px rgba(0,0,0,0.08);    background: #fff;
-}
+        .download-btn:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+            color: #fff;
+        }
 
-    padding: 20px;
-    border-radius: 12px;
+        .screenshot-wrapper {
+            width: 100%;
+            overflow: hidden;
+            padding: 40px 0;
+            background: var(--light-bg);
+        }
 
-        .feature-card strong { color: var(--primary-blue); display: block; margin-bottom: 5px; font-size: 1.2rem; }
-        .trial-box { background: linear-gradient(135deg, #e7f3ff 0%, #ffffff 100%); padding: 30px; border-radius: 15px; border: 1px solid #bde0ff; text-align: center; margin: 50px 0; }
-        .contact-info { text-align: center; margin-top: 60px; padding: 40px; background: var(--light-bg); border-radius: 20px; }
-        footer { padding: 40px 20px; text-align: center; font-size: 0.9em; color: #888; background: #fff; }
-        a { color: var(--primary-blue); text-decoration: none; font-weight: 600; }
-        @media (max-width: 600px) { h1 { font-size: 2rem; } .screenshot-item { flex: 0 0 220px; } }
+        .screenshot-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 0 20px 20px 20px;
+            scrollbar-width: none;
+        }
+
+        .screenshot-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .screenshot-item {
+            flex: 0 0 280px;
+            scroll-snap-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: var(--dark-bg);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            font-weight: 400;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--dark-bg);
+            margin-top: 40px;
+            border-left: 4px solid var(--primary-blue);
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: # box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            background: #fff;
+        }
+
+        padding: 20px;
+        border-radius: 12px;
+
+        .feature-card strong {
+            color: var(--primary-blue);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .trial-box {
+            background: linear-gradient(135deg, #e7f3ff 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #bde0ff;
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: var(--light-bg);
+            border-radius: 20px;
+        }
+
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            background: #fff;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .screenshot-item { flex: 0 0 220px; }
+        }
     </style>
 </head>
+
 <body>
 
     <header>
-        
         <img src="banner.png" alt="Kartwise Pro Banner" class="banner">
 
         <h1>Better data. Better decisions. Faster laps.</h1>
@@ -73,9 +197,8 @@
         </p>
 
         <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share" class="download-btn" target="_blank">
-        Start Free Trial
-    </a>
-
+            Start Free Trial
+        </a>
     </header>
 
     <div class="screenshot-wrapper">
@@ -89,88 +212,82 @@
             <div class="screenshot-item"><img src="shot7.png" alt="App Screen 7"></div>
             <div class="screenshot-item"><img src="shot8.png" alt="App Screen 8"></div>
         </div>
-        <p style="text-align: center; color: #999; font-size: 0.8rem; margin-top: 10px;">← Swipe to see more →</p>
+
+        <p style="text-align: center; color: #999; font-size: 0.8rem; margin-top: 10px;">
+            ← Swipe to see more →
+        </p>
     </div>
 
     <div class="content-container">
 
         <img src="logo.png" alt="Logo" style="width: 240px; border-radius: 48px; margin-bottom: 10px;">
-        
-        <!-- CHANGE 4: Updated Heading and Paragraphs -->
-        <h2>Available Now</h2>
-        
-        
-        <h2 style="text-align:center;">Log. Analyse. Perform.</h2>
-        
+
+        <h2>Log. Analyse. Perform. Available Now</h2>
+
         <p>
-    In the heat of a race day, every second counts. 
-    <strong>Kartwise Pro</strong> replaces messy, incomplete paper logs with a streamlined digital interface built for the speed of competitive karting.
-</p>
+            In the heat of a race day, every second counts. 
+            <strong>Kartwise Pro</strong> replaces messy, incomplete paper logs with a streamlined digital interface built for the speed of competitive karting.
+        </p>
 
-<p>
-    <strong style="color:#007bff;">Log:</strong> No more second-guessing. 
-    Capture timing screens, engine speed data and lap progression with <strong>image scanning</strong>, 
-    and record tyre pressures and notes instantly using <strong>voice dictation</strong>.
-</p>
+        <p>
+            <strong style="color:#007bff;">Log:</strong> No more second-guessing. 
+            Capture timing screens, engine speed data and lap progression with <strong>image scanning</strong>, 
+            and record tyre pressures and notes instantly using <strong>voice dictation</strong>.
+        </p>
 
-<p>
-    <strong style="color:#007bff;">Analyse:</strong> 
-    Kartwise Pro processes your performance and setup data to suggest changes and tyre pressures, 
-    helping you <strong>find the right setup in each session</strong>.
-</p>
+        <p>
+            <strong style="color:#007bff;">Analyse:</strong> 
+            Kartwise Pro processes your performance and setup data to suggest changes and tyre pressures, 
+            helping you <strong>find the right setup in each session</strong>.
+        </p>
 
-<p>
-    <strong style="color:#007bff;">Perform:</strong> 
-    Use what you’ve learned to <strong>make better decisions</strong> and 
-    <strong>extract more from every session</strong>.
-</p>
+        <p>
+            <strong style="color:#007bff;">Perform:</strong> 
+            Use what you’ve learned to <strong>make better decisions</strong> and 
+            <strong>extract more from every session</strong>.
+        </p>
 
         <div class="feature-grid">
 
-        <div class="feature-card" style="text-align:center;">
-            <img src="logstuff.png" alt="Log feature" style="width:100%; border-radius:10px; margin-bottom:10px;">
-            
-<p>
-    <strong style="color:#007bff;">Log:</strong>
-    Record driver, setup and conditions without losing detail.
-</p>
+            <div class="feature-card" style="text-align:center;">
+                <img src="logstuff.png" alt="Log feature" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+                <p>
+                    <strong style="color:#007bff;">Log:</strong>
+                    Record driver, setup and conditions without losing detail.
+                </p>
+            </div>
+
+            <div class="feature-card" style="text-align:center;">
+                <img src="analysestuff.png" alt="Analyse feature" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+                <p>
+                    <strong style="color:#007bff;">Analyse:</strong>
+                    Capture lap data from your MyChron screen without typing it in.
+                </p>
+            </div>
+
+            <div class="feature-card" style="text-align:center;">
+                <img src="tyrepressureAI.png" alt="Perform feature" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+                <p>
+                    <strong style="color:#007bff;">Perform:</strong>
+                    Use your data to make better setup decisions at the track.
+                </p>
+            </div>
+
+            <div class="feature-card" style="text-align:center;">
+                <img src="logo.png" alt="Logo" style="width:100%; border-radius:10px; margin-bottom:10px;">
+
+                <p style="font-size:1.0rem;">
+                    <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share">
+                        Available on Google Play
+                    </a>
+                </p>
+            </div>
 
         </div>
 
-        <div class="feature-card" style="text-align:center;">
-            <img src="analysestuff.png" alt="Analyse feature" style="width:100%; border-radius:10px; margin-bottom:10px;">
-            
-<p>
-    <strong style="color:#007bff;">Analyse:</strong>
-    Capture lap data from your MyChron screen without typing it in.
-</p>
-
-        </div>
-
-        <div class="feature-card" style="text-align:center;">
-            <img src="tyrepressureAI.png" alt="Perform feature" style="width:100%; border-radius:10px; margin-bottom:10px;">
-            
-<p>
-    <strong style="color:#007bff;">Perform:</strong>
-    Use your data to make better setup decisions at the track.
-</p>
-
-        </div>
-
-        <div class="feature-card" style="text-align:center;">
-    <img src="logo.png" alt="Logo"
-         style="width:100%; border-radius:10px; margin-bottom:10px;">
-    
-    <p style="font-size:1.0rem;">
-        <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share">
-            Available on Google Play
-        </a>
-    </p>
-</div>
-
-</div>
-        
-        
         <h2>Turn Your Data Into a Podium Finish</h2>
 
         <div class="feature-grid">
@@ -178,14 +295,17 @@
                 <strong>AI Technical Director</strong>
                 Diagnose handling problems (understeer, oversteer, binding) and get instant, actionable recommendations for chassis and gearing tweaks.
             </div>
+
             <div class="feature-card">
                 <strong>Dash Screen Scanning</strong>
                 Point your camera at your Mychron or Alfano. Kartwise Pro scans the screen to instantly log lap times, RPMs, and temperatures.
             </div>
+
             <div class="feature-card">
                 <strong>Tyre Pressure AI</strong>
                 Analyzes hot and cold pressures from your best laps to suggest the perfect starting pressures for your next session.
             </div>
+
             <div class="feature-card">
                 <strong>Surgical Precision</strong>
                 Track engine hours and tire heat cycles automatically. Find winning setups for your favorite tracks with one tap.
@@ -195,21 +315,29 @@
         <div class="trial-box">
             <span style="font-size: 1.5rem;">🏎️</span><br>
             <strong>30 Day Full Access Free Trial</strong><br>
-            <p style="font-size: 0.9em; margin-top: 10px;">Build your database for free for 30 days—your data stays with you, even if you don't subscribe.</p>
-            <!-- Link inside the box for extra conversion -->
-            <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share">Download & Start Trial</a>
+
+            <p style="font-size: 0.9em; margin-top: 10px;">
+                Build your database for free for 30 days—your data stays with you, even if you don't subscribe.
+            </p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share">
+                Download & Start Trial
+            </a>
         </div>
 
         <div class="contact-info">
             <p>Questions? Reach out to the team:</p>
-            <a href="mailto:kartwisepro@gmail.com" style="font-size: 1.2rem;">kartwisepro@gmail.com</a>
+            <a href="mailto:kartwisepro@gmail.com" style="font-size: 1.2rem;">
+                kartwisepro@gmail.com
+            </a>
         </div>
+
     </div>
 
     <footer>
         <p>&copy; 2026 Kartwise Pro Ltd</p>
         <p>
-            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="privacy.html">Privacy Policy</a> |
             <a href="terms.html">Terms and Conditions</a>
         </p>
     </footer>
