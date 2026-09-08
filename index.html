@@ -36,6 +36,14 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         }
 
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
         /* CHANGE 2: Added styles for the Download Button */
         .download-btn {
             display: inline-block;
@@ -49,6 +57,12 @@
             transition: transform 0.2s, background-color 0.2s;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             margin-top: 20px;
+        }
+
+        .download-btn img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
         }
 
         .download-btn:hover {
@@ -204,6 +218,24 @@
             Keep complete session logs, understand your data, and make race winning decisions.
         </p>
 
+        <div class="download-buttons">
+
+        <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share"
+           class="download-btn"
+           target="_blank">
+            <img src="google-play.svg" alt="Google Play">
+            <span>Get it on Google Play</span>
+        </a>
+
+        <a href="https://apps.apple.com/gb/app/idYOUR_APP_ID"
+            class="download-btn"
+            target=tore</span>
+            <img src="Apple_logo_grey.svg.webp" alt="App Store">
+            <span>Download on the App Store</span>
+        </a>
+
+        </div>
+        
         <a href="https://play.google.com/store/apps/details?id=com.kartwise.pro&pcampaignid=web_share" class="download-btn" target="_blank">
             Start Free Trial
         </a>
